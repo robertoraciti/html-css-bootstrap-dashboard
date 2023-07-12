@@ -24,6 +24,11 @@
 
 .dashboard {
   width: calc(100% - 60px);
+  overflow: auto;
+}
+
+.dash-header {
+  width: 100%;
 }
 
 .dropdown button {
@@ -31,8 +36,27 @@
   background-color: white;
 }
 
-.dash-header {
-  height: 300px;
+small {
+  background-color: #165bba;
+  font-size: 0.6rem;
+}
+
+td > i {
+  background-color: #f26551;
+}
+
+.done {
+  width: 50px;
+}
+
+.state {
+  font-size: 0.6rem;
+}
+
+td button {
+  background-color: white;
+  border: 1px solid #6c757d;
+  color: #6c757d;
 }
 
 @media screen and (min-width: 992px) {
@@ -42,5 +66,11 @@
 
   .dashboard {
     width: calc(100% - 150px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dash-header-item {
+    width: calc(100% / 3);
   }
 }
