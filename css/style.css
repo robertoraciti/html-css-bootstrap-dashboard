@@ -1,0 +1,46 @@
+.bordered {
+  border: 2px dashed black;
+}
+
+#header {
+  height: 70px;
+  background-color: white;
+}
+
+.logo-small {
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.main-content {
+  height: calc(100vh - 80px);
+}
+
+.side-bar {
+  width: 60px;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: #051e34;
+}
+
+.dashboard {
+  width: calc(100% - 60px);
+}
+
+.dropdown button {
+  color: goldenrod;
+  background-color: white;
+}
+
+.dash-header {
+  height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .side-bar {
+    width: 150px;
+  }
+
+  .dashboard {
+    width: calc(100% - 150px);
+  }
+}
