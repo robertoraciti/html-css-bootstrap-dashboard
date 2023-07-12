@@ -7,9 +7,28 @@
   background-color: white;
 }
 
+.header-logo,
+.header-icons {
+  width: 15%;
+}
+
+.header-search {
+  width: 70%;
+  background-color: #e5e5e5;
+}
+
+.header-search i {
+  width: 25px;
+}
+
 .logo-small {
   width: 50px;
   aspect-ratio: 1;
+}
+
+#Search {
+  background-color: #e5e5e5;
+  width: calc(100% - 30px);
 }
 
 .main-content {
