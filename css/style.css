@@ -78,6 +78,10 @@ td button {
   color: #6c757d;
 }
 
+.side-item:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 @media screen and (min-width: 992px) {
   .side-bar {
     width: 150px;
@@ -86,10 +90,22 @@ td button {
   .dashboard {
     width: calc(100% - 150px);
   }
+
+  .offcanvas {
+    width: 50% !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .dash-header-item {
     width: calc(100% / 3);
+  }
+
+  .dash-header-item:first-child {
+    order: 2;
+  }
+
+  .dash-header-item:last-child {
+    order: 1;
   }
 }

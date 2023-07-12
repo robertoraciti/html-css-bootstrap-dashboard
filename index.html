@@ -57,19 +57,19 @@
       <div class="side-bar d-flex flex-column justify-content-between pb-2">
         <div class="container-fluid">
           <div
-            class="d-flex text-light justify-content-center align-items-center pt-3"
+            class="side-item d-flex text-light justify-content-center align-items-center mt-3 p-1 "
           >
             <i class="fa-solid fa-house me-lg-2"></i>
             <div class="d-none d-lg-block">Home</div>
           </div>
           <div
-            class="d-flex text-light justify-content-center align-items-center pt-3"
+            class="side-item d-flex text-light justify-content-center align-items-center mt-3 p-1"
           >
             <i class="fa-solid fa-chart-simple me-lg-2"></i>
             <div class="d-none d-lg-block">Stats</div>
           </div>
           <div
-            class="d-flex text-light justify-content-center align-items-center pt-3"
+            class="side-item d-flex text-light justify-content-center align-items-center mt-3 p-1"
           >
             <i class="fa-solid fa-signal me-lg-2"></i>
             <div class="d-none d-lg-block">Signals</div>
@@ -77,7 +77,7 @@
         </div>
         <div class="container-fluid">
           <div
-            class="d-flex text-light justify-content-center align-items-center pt-3"
+            class="side-item d-flex text-light justify-content-center align-items-center p-1"
           >
             <i class="fa-solid fa-gear me-lg-2"></i>
             <div class="d-none d-lg-block">Admin</div>
@@ -101,14 +101,14 @@
             </button>
 
             <div
-              class="offcanvas offcanvas-start"
+              class="offcanvas w-100 offcanvas-end"
               tabindex="-1"
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
             >
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                  Offcanvas
+                <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel">
+                  Inserisci un nuovo studente
                 </h5>
                 <button
                   type="button"
@@ -117,8 +117,70 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body">
-                <form action=""></form>
+              <div class="offcanvas-body text-dark">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputsurName" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="inputsurName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" id="email" class="form-control" aria-label="Email" aria-describedby="basic-addon1">
+                          </div>
+                          
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Stato</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Italia</option>
+                        <option>Spagna</option>
+                        <option>Germania</option>
+                        <option>Inghilterra</option>
+                        <option>Francia</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputcap" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="inputcap">
+                    </div>
+                    <div class="col-12">
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Foto</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>   
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                      <button class="btn btn-warning">Svuota</button>
+                    </div>
+                  </form>
               </div>
             </div>
           </div>
